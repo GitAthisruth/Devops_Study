@@ -29,13 +29,33 @@ Pull Request Automation
 
 3. If pull requests are approved, the code changes can go into the main codebase.
 
-  
-  Git Definition
+
+
+Deployment Automation
+
+
+
+
+Git Definition
 
  
 Git is used for cloud-based code change collaboration. See the full history of code changes,review developer changes, and store in files called repositories.
 
 
-Deployment Automation
+What can you automate ?
+
+
+Continous Integration (CI)
+
+Per change ephemeral environments 
+
+Automated security scanning 
+
+Notifications to reviewers
+
+
+Goal as Devops Engineer
+
+Help developer change proposals get reviewed and merged within 24 hours of when they are made. 
 
 
