@@ -105,5 +105,34 @@ Devops Engineering is vital for engineering teams,especially as the product matu
 
 
 
+Test Driven Development(TDD) Definition
+
+Known sometimes as TDD, it is a coding methadology where tests are written before code is written.
+
+Unit tests
+Integration tests
+System (end to end) tests
+Acceptance tests
+
+
+TDD Goals
+
+1. Know when something breaks and where 
+
+2. Know that the whole system is working correctly.
+
+
+Workflow without TDD 
+
+1. Choose something to work on 
+2. Build it based on specification 
+3. Test it with small scripts
+
+
+Workflow with TDD
+
+1. Choose something to work on 
+2. Write tests that would pass if product works
+3. keep building until all tests pass
 
 
