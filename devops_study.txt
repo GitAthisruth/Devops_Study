@@ -1,0 +1,41 @@
+Devops
+
+A methadology that helps engineering teams build products by continously getting user feedback.
+
+
+DEVOPS - > plan - code - build - test - release - deploy - operate - monitor 
+
+
+Devops Engineering Definition -  Practical use of Devops within software engineering teams.Being able to build,test, release and monitor applications.
+
+
+Devops Engineering Pillars 
+
+1. Pull Request Automation 
+
+2. Deployment Automation
+
+3. Application Performance management
+
+
+
+Pull Request Automation 
+
+1. Developers share code changes using git tools like github,gitlab and Bitbucket.
+
+
+2. A set of code changes in git tools is called a "pull request" or "merge request".
+
+
+3. If pull requests are approved, the code changes can go into the main codebase.
+
+  
+  Git Definition
+
+ 
+Git is used for cloud-based code change collaboration. See the full history of code changes,review developer changes, and store in files called repositories.
+
+
+Deployment Automation
+
+
