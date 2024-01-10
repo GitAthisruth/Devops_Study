@@ -61,4 +61,17 @@ Goal as Devops Engineer
 
 Help developer change proposals get reviewed and merged within 24 hours of when they are made. 
 
+Have the right tools in place that facilitate deployment without having to have too much custom code. 
+
+
+Application Performance management
+
+1. Metrics: numeric measurements of key numbers in production.
+
+2. Logging: text descriptions of what is happening during processing 
+
+3. Monitoring: take metrics and logs to convert them into health metrics.
+
+4. Alerting: if monitoring detects a problem, it notifies developer. 
+
 
