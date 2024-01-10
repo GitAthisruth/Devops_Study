@@ -1,138 +1,147 @@
 Devops
 
-A methadology that helps engineering teams build products by continously getting user feedback.
+    A methadology that helps engineering teams build products by continously getting user feedback.
 
 
-DEVOPS - > plan - code - build - test - release - deploy - operate - monitor 
+    DEVOPS - > plan - code - build - test - release - deploy - operate - monitor 
 
 
-Devops Engineering Definition -  Practical use of Devops within software engineering teams.Being able to build,test, release and monitor applications.
+    Devops Engineering Definition -  Practical use of Devops within software engineering teams.Being able to build,test, release and monitor applications.
 
 
 Devops Engineering Pillars 
 
-1. Pull Request Automation 
+    1. Pull Request Automation 
 
-2. Deployment Automation
+    2. Deployment Automation
 
-3. Application Performance management
+    3. Application Performance management
 
 
 
 Pull Request Automation 
 
-1. Developers share code changes using git tools like github,gitlab and Bitbucket.
+    1. Developers share code changes using git tools like github,gitlab and Bitbucket.
 
 
-2. A set of code changes in git tools is called a "pull request" or "merge request".
+    2. A set of code changes in git tools is called a "pull request" or "merge request".
 
 
-3. If pull requests are approved, the code changes can go into the main codebase.
+    3. If pull requests are approved, the code changes can go into the main codebase.
 
 
 
 Deployment Automation
 
-1. Deploy a feature to a certain set of users as a final test before rolling it out publically.
+    1. Deploy a feature to a certain set of users as a final test before rolling it out publically.
 
-2. Starting new versions of services without causing downtime 
+    2. Starting new versions of services without causing downtime 
 
-3. Rolling back to the prior version in case something does go wrong.
+    3. Rolling back to the prior version in case something does go wrong.
 
 Git Definition
 
  
-Git is used for cloud-based code change collaboration. See the full history of code changes,review developer changes, and store in files called repositories.
+    Git is used for cloud-based code change collaboration. See the full history of code changes,review developer changes, and store in files called repositories.
 
 
 What can you automate ?
 
 
-Continous Integration (CI)
+    Continous Integration (CI)
 
-Per change ephemeral environments 
+    Per change ephemeral environments 
 
-Automated security scanning 
+    Automated security scanning 
 
-Notifications to reviewers
+    Notifications to reviewers
 
 
 Goal as Devops Engineer
 
-Help developer change proposals get reviewed and merged within 24 hours of when they are made. 
+    Help developer change proposals get reviewed and merged within 24 hours of when they are made. 
 
-Have the right tools in place that facilitate deployment without having to have too much custom code. 
+    Have the right tools in place that facilitate deployment without having to have too much custom code. 
 
 
 Application Performance management
 
-1. Metrics: numeric measurements of key numbers in production.
+    1. Metrics: numeric measurements of key numbers in production.
 
-2. Logging: text descriptions of what is happening during processing 
+    2. Logging: text descriptions of what is happening during processing 
 
-3. Monitoring: take metrics and logs to convert them into health metrics.
+    3. Monitoring: take metrics and logs to convert them into health metrics.
 
-4. Alerting: if monitoring detects a problem, it notifies developer. 
+    4. Alerting: if monitoring detects a problem, it notifies developer. 
 
 
 Examples of Devops Engineering 
 
-Scenario 1: new startup with no users building a  web applications.
+    Scenario 1: new startup with no users building a  web applications.
 
-Recommended free stack:
-github
-Netlify/Vercel
-LayerCI
+    Recommended free stack:
+    github
+    Netlify/Vercel
+    LayerCI
 
-Scenario 2: Team building an application for 10 enterprise customers.
-
-
-Recommended stack:
-Github,Sentry,pageDuty,
-CodeCov,Bitrise/CircleCI
+    Scenario 2: Team building an application for 10 enterprise customers.
 
 
-Scenario 3:Heavy traffic social media application like Reddit.
+    Recommended stack:
+    Github,Sentry,pageDuty,
+    CodeCov,Bitrise/CircleCI
 
 
-Recommend stack:
+    Scenario 3:Heavy traffic social media application like Reddit.
 
-Github Enterprise,Sentry,
-ElasticSearch/Logstash/Kibana,
-Pingdom,Launch Darkly,Terraform
 
-Devops Engineering is vital for engineering teams,especially as the product matures.
+    Recommend stack:
+
+    Github Enterprise,Sentry,
+    ElasticSearch/Logstash/Kibana,
+    Pingdom,Launch Darkly,Terraform
+
+    Devops Engineering is vital for engineering teams,especially as the product matures.
 
 
 
 Test Driven Development(TDD) Definition
 
-Known sometimes as TDD, it is a coding methadology where tests are written before code is written.
+    Known sometimes as TDD, it is a coding methadology where tests are written before code is written.
 
-Unit tests
-Integration tests
-System (end to end) tests
-Acceptance tests
+    Unit tests
+    Integration tests
+    System (end to end) tests
+    Acceptance tests
 
 
 TDD Goals
 
-1. Know when something breaks and where 
+    1. Know when something breaks and where 
 
-2. Know that the whole system is working correctly.
+    2. Know that the whole system is working correctly.
 
 
 Workflow without TDD 
 
-1. Choose something to work on 
-2. Build it based on specification 
-3. Test it with small scripts
+    1. Choose something to work on 
+    2. Build it based on specification 
+    3. Test it with small scripts
 
 
-Workflow with TDD
+    Workflow with TDD
 
-1. Choose something to work on 
-2. Write tests that would pass if product works
-3. keep building until all tests pass
+    1. Choose something to work on 
+    2. Write tests that would pass if product works
+    3. keep building until all tests pass
+
+
+What is CI ? 
+
+    Continous Integration(CI) Definition
+
+    Developers pushing many small changes to a central git repository per day. These changes are verified by an automatic software that runs comprehensive tests to ensure no major issues are seen by customers.
+
+
 
 
