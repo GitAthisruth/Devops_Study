@@ -144,4 +144,12 @@ What is CI ?
 
 
 
+Top 3 Benefits of CI:
+
+    1. CI is the first step to Devops automation and helps with code collaboration.
+    2. CI helps  improve developer speed without breaking existing code.
+    3. CI helps reduce customer churn and user satisfaction by preventing broken code from publishing.
+
+CI is a vital tool for developer collaboration.Increase collaboration,prevent errors, and increase user satisfaction.
+
 
