@@ -33,8 +33,11 @@ Pull Request Automation
 
 Deployment Automation
 
+1. Deploy a feature to a certain set of users as a final test before rolling it out publically.
 
+2. Starting new versions of services without causing downtime 
 
+3. Rolling back to the prior version in case something does go wrong.
 
 Git Definition
 
