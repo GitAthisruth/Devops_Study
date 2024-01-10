@@ -75,3 +75,29 @@ Application Performance management
 4. Alerting: if monitoring detects a problem, it notifies developer. 
 
 
+Examples of Devops Engineering 
+
+Scenario 1: new startup with no users building a  web applications.
+
+Recommended free stack:
+github
+Netlify/Vercel
+LayerCI
+
+Scenario 2: Team building an application for 10 enterprise customers.
+
+
+Recommended stack:
+Github,Sentry,pageDuty,
+CodeCov,Bitrise/CircleCI
+
+
+Scenario 3:Heavy traffic social media application like Reddit.
+
+
+Recommend stack:
+
+Github Enterprise,Sentry,
+ElasticSearch/Logstash/Kibana,
+Pingdom,Launch Darkly,Terraform
+
