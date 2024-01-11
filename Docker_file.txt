@@ -102,7 +102,7 @@ Docker Vs Virtual Machines
 
  Virtual Machines  - it virtualise both layer1(application) and layer2(OS Kernel) at the same time. Size will be huge.
 
-                   - Comparetively smaller
+                   - Comparetively slower to run.
 
                    - Compatible to all os.
 
