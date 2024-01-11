@@ -118,7 +118,7 @@ CMD python app.py
 (before creating docker image first open docker quick start terminal for connection with ip)
 
 
-type all command  in command Prompt
+(Type all command  in command Prompt)
 creating new docker image - docker build -t <docker_hub account_name>/<new_image_name> .
 docker build -t welcome-app . -to build new image. here welcome-app is the docker image name. and use this command in cmd.
 eg:
