@@ -153,3 +153,6 @@ Top 3 Benefits of CI:
 CI is a vital tool for developer collaboration.Increase collaboration,prevent errors, and increase user satisfaction.
 
 
+What is code coverage?
+
+

@@ -1,0 +1,158 @@
+Docker 
+
+- It standardise the environment,isolation and portability.
+
+- Build once and deploy it anywhere.
+
+-it bring a concept of virtualisation.
+
+
+Docker Commands 
+
+All docker commands are used in the docker file.
+
+
+1. FROM     -  it is used to create base image.eg:UBUNTU LINUX
+
+The FROM instruction initializes a new build stage and sets the Base Imageopen_in_new for subsequent instructions. As such, a valid Dockerfile must start with a FROM instruction. The image can be any valid image – it is especially easy to start by pulling an image from the Public Repositoriesopen_in_new.
+
+2. COPY     -  copy the files into the particular location(user root folder) inside the  
+docker image.eg: COPY . /app - all files inside the container copy  in app folder.
+s
+3. EXPOSE   -  Exposing the network port number.eg:5000
+
+4. WORKDIR  -  to make a working directory.
+
+The WORKDIR instruction in a Dockerfile sets the current working directory for subsequent instructions in the Dockerfile. When the WORKDIR instruction is executed, all the subsequent instructions in the Dockerfile will be executed relative to the specified directory.
+
+5. RUN      -  pip install -r requirement.txt
+
+The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile .
+
+6. CMD      -  python app.py -to run the application in the docker image.
+
+
+-There is a docker hub . Base images are downloaded from docker hub.
+
+-Base image is basically an os. We build components above the base image.
+
+-After putting all required components.Finally,encapsulated together.This is called docker image.Then dockerise it.
+
+-Each and every docker has it's own user root folder.
+
+
+woking - Write the Docker file
+
+       - Building the docker image
+
+       - Running our money authenticator app
+
+        a. Building the docker image
+           
+           command -  docker build -t money_api .
+ see the dockers 
+
+running the dockers 
+docker run -p 8000:8000 money_api
+
+
+Dockers
+
+
+1. Containers - A way to package application with all the necessary dependencies  and configuration.
+
+- Each dependencies taken as image
+
+2. Portable artifact - Easily share and move this package to any environment. 
+
+3. Makes development and deployment more easy and efficient.
+
+4. Layer of images is called docker image.
+
+5. 
+
+
+Docker Image 
+
+1. Package or Artifact(dependency)
+
+2. Move or share this artifact(dependency)
+
+
+Container
+
+1. Docker Image -  run it  
+
+2. Start the application
+
+3. Create a container(environment) to run the entire application 
+
+4.Container is considered as an environment.
+
+
+
+Docker Vs Virtual Machines 
+
+
+ Docker - it virtualise the layer1(application layer) only. Docker image size is usually smaller. 
+
+        - Docker containers start and run much faster.
+
+        - Compatibility issue. Linux docker image is not compatible to windows.
+
+ Virtual Machines  - it virtualise both layer1(application) and layer2(OS Kernel) at the same time. Size will be huge.
+
+                   - Comparetively smaller
+
+                   - Compatible to all os.
+
+
+eg:FROM python:3.8-alpine           
+RUN . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+CMD python app.py
+
+(before creating docker image first open docker quick start terminal for connection with ip)
+
+creating new docker image - docker build -t <docker_hub account_name>/<new_image_name> .
+docker build -t welcome-app . -to build new image. here welcome-app is the docker image name. and use this command in cmd.
+eg:
+
+Virtual environmental creation in vs code - python -m venv <name>
+
+Calling command - <name>\Scripts\activate
+
+Ethernet adapter VirtualBox Host-only Network:
+
+check for the docker images we created - docker images
+
+-first you need to run the flask app - python app.py 
+
+to map between hostport and container port. - docker run -p 5000:5000 <docker image name>
+
+to find which container is running in cmd - docker ps
+
+command to login to docker desktop after creating a repository - docker login 
+
+removing a docker image - docker image rm -f <docker_image_name> 
+
+creating new image - eg -docker build -t athisruth/welcome-app . ,by this format
+
+change name of docker image - docker tag <old name> <new name> , eg : docker tag athisruth/welcome-app athisruth/welcomeapp2  
+
+to push(upload) our docker image to our repository - docker push <account name>/<repository name>:tagname ,eg:docker push athisruth/dockerstudy:latest
+
+to pull(download) our docker image from our repository - docker pull <docker hub account name>/<repository name>:tagname ,eg:docker pull athisruth/dockerstudy:latest
+
+ - docker run -d -p 5000:5000 <docker_hub account_name>/<repository_name>:tagname,-d is detach mode eg:docker run -d -p 5000:5000 athisruth/we
+lcome-app:latest
+
+(if showing this message "docker: Error response from daemon: driver failed programming external connectivity on endpoint webserver (bd57efb73c738e3b271db180ffbee0a56cae86c8193242fbc02ea805101df21e): Error starting userland proxy: Bind for 0.0.0.0:80: unexpected error (Failure EADDRINUSE)." 
+the use -docker ps - to check the id currently running with that port .
+the stop that container id  - docker stop <container id>
+
+then again use - docker run -d -p 5000:5000 <git_hub account_name>/<repository_name>:tagname ,then it will work.you also need to run the flask app - python app.py  , 5000:5000 - smeans host port to the container port
+
+command used to stop specific container - docker stop [OPTIONS] CONTAINER [CONTAINER...] 
+
