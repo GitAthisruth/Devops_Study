@@ -100,6 +100,8 @@ Docker Vs Virtual Machines
 
         - Compatibility issue. Linux docker image is not compatible to windows.
 
+        - Compatibility issue fixed after windows 11.
+
  Virtual Machines  - it virtualise both layer1(application) and layer2(OS Kernel) at the same time. Size will be huge.
 
                    - Comparetively slower to run.
