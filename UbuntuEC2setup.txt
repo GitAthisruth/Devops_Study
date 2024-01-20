@@ -1,0 +1,88 @@
+AWS - Amazon Web Services
+
+It is a secure cloud computing platform
+
+
+What is cloud computing?
+Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).
+
+They provide computing power,database,networking,content storage etc.
+
+
+
+Advantages:
+
+Security,Experience,Flexible,Easy to use,Scalable
+
+
+Services:
+
+compute services:
+
+EC2,AWS Lambda,Amazon Lightsail ,Elastic Beanstalk
+
+Storage services:
+
+Amazon S3 ,EBS, S3 Glacier,Elastic File Storage
+
+
+Database services:
+
+Amazon RDS,Dynamo Db,Red Shift
+
+Networking services:
+
+Amazon VPS,Amazon Route 53,Elastic Load Balancing
+
+What is EC2 in AWS used for?
+
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
+
+what is an instance in aws?
+
+You can run multiple virtual machines on a single computer, but when you run virtual machines in the cloud environment, they are known as instances. Running virtual machines on the cloud allows organizations to benefit from the cost effectiveness of sharing and scaling resources.
+
+
+EC2 Instance
+
+ECR - used to store private docker images.
+
+Select IAM  in AWS
+
+ECR url - 865725201318.dkr.ecr.ap-northeast-1.amazonaws.com/seoulbikerent
+
+commands to be executed inside EC2 ubuntu instance
+
+sudo apt-get update -y -will update the list of packages installed on your system and compare that to the latest version of each package.
+
+sudo apt-get upgrade - to install available upgrades of all packages currently installed on the system from the sources configured via sources. first we need to execute this command "sudo apt-get update".
+
+curl -fsSL https://get.docker.com -o get-docker.sh - used to download the docker script
+
+sudo sh get-docker.sh  - used to download and execute a script named get-docker.sh with elevated privileges. 
+
+sudo usermod -aG docker ubuntu - verify the script's content
+
+newgrp docker
+
+
+docker system prune -a -used to remove unused images and containers
+
+
+
+865725201318.dkr.ecr.ap-northeast-1.amazonaws.com/bike
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
